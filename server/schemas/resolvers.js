@@ -21,7 +21,7 @@ user: async (parent, { username }) => {
         return Thought.find(params).sort({ createdAt: -1 });
       },
 
-      thought: asyunc (parent, { _id }) => {
+      thought: async (parent, { _id }) => {
         return Thought.findOne({ _id });
       }
     }
